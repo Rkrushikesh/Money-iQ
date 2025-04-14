@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site Login</title>
+    <link rel="stylesheet" href="./login.css">
+    
+</head>
+<body>
+   <div class="login-container loginModal modal" id="registerModal">
+   
+    
+     
+        <div class="logo">BankingSite</div>
+        <h2>Log in to your Account</h2>
+        
+        
+        <form action="/bank/LoginServlet" method="post">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                 <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+           
+                     required>
+            </div>
+            
+         
+            <button type="submit" class="login-btn" id="accountsButton">Log in</button>
+            
+             <p>Don't have an account? <a href="signUp.html">Create an account</a></p>
+            
+        </form>
+    </div>
+       
+       
+      
+       
+</body>
+</html>
