@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Activities</title>
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #9663c3f3;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #001f3f;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0074d9;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card1 {
+    background-color: #fff;
+    background-image: url("https://plus.unsplash.com/premium_photo-1679397743664-f9384e6ad49d?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    background-size: cover; /* Makes the image cover the entire card */
+    background-position: center; /* Centers the image within the card */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    height: 250px; 
+}
+
+
+.card2 {
+    background-color: #fff;
+    background-image: url("https://plus.unsplash.com/premium_photo-1674726322489-a4f63cde306f?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    background-size: cover; /* Makes the image cover the entire card */
+    background-position: center; /* Centers the image within the card */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    height: 250px; 
+}
+.card3 {
+    background-color: #fff;
+    background-image: url("https://plus.unsplash.com/premium_photo-1672660509832-0c749dbd82eb?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    background-size: cover; /* Makes the image cover the entire card */
+    background-position: center; /* Centers the image within the card */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    height: 250px; 
+}
+
+
+
+
+.card1 h3 {
+    margin: 1rem 0 0.5rem;
+    color: rgb(8, 8, 8);
+
+}
+
+.card1 p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card2 h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.card2 p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.card3 h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.card3 p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Banking System Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <li><a href="view-balance.html">View Balance</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="create-loan.html">Create Loan</a></li>
+            <li><a href="accounts.html">Manage Accounts</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to Your Banking Dashboard</h2>
+            <p>Select an activity from the menu above to get started.</p>
+
+            <!-- Image Cards Section -->
+            <div class="cards">
+                <div class="card1">
+                    <!-- <img src="view-balance.jpg" alt="View Balance"> -->
+                    <h3>View Balance</h3>
+                    <p>Easily check your account balance with a single click.</p>
+                 <button>  View Balance </button>
+                </div>
+                <div class="card2">
+                    <!-- <img src="transactions.jpg" alt="Transactions"> -->
+                    <h3>Transactions</h3>
+                    <p>Monitor all your transaction details in one place.</p>
+                    <a href="Transition.html"> Perform Transition Operation </a>
+                <button>  Transition  </button>
+                </div>
+                <div class="card3">
+                    <!-- <img src="create-loan.jpg" alt="Create Loan"> -->
+                    <h3>Create Accounts</h3>
+                    <p>Create a account please mention the amount , name , type .</p>
+                    <a href="BankAccount.html"> Create Bank Account </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Banking System Inc.</p>
+    </footer>
+</body>
+</html>

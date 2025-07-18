@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* loans.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0px;
+  text-align: center;
+
+
+}
+
+header h1 {
+  margin-top: 9px;
+  margin-bottom: 23px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Navigation Menu */
+/* .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul.show {
+      display: flex;
+  }
+} */
+
+
+/* Navbar Styles */
+#navbar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 0 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li:hover {
+  color: #ff6347;
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.signUp span {
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: #ffffffd8;
+  color: black;
+}
+
+/* Body and Container Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #0047ab;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden for loading effect */
+  transform: translateY(20px); /* Initial transform for loading effect */
+  transition: all 0.5s ease-in-out; /* Transition for loading effect */
+}
+
+.container.visible {
+  opacity: 1; /* Show container */
+  transform: translateY(0); /* Reset transform */
+}
+
+h1 {
+  color: #0047ab;
+}
+
+/* Loan Card Styles */
+.loan-card {
+  margin-top: 22px;
+  background-color: #e8f4ff;
+  border-left: 5px solid #0047ab;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.loan-card h2 {
+  margin-top: 0;
+}
+
+.loan-card p {
+  margin: 10px 0;
+}
+
+footer {
+  display: flex;
+  height: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}

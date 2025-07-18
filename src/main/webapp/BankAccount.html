@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bank Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        input::placeholder {
+            color: #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ff7f50;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+        <h2>Generate pin </h2>
+        <form action="CreateAccountServlet" method="get">
+            <input type="text" name="accountNumber" placeholder="Enter AccountNumber " >    
+            <button type="submit">  Generate pin </button>
+        </form>
+        
+    </div>
+    <div class="container">
+        <h2>Create Bank Account</h2>
+        <form action="CreateAccountServlet" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="accountType" placeholder="Account Type (Savings/Current)" required>
+            <input type="number" name="initialDeposit" placeholder="Initial Deposit Amount" required>
+             <input type="number" name="pin " placeholder="enter 6 digit pin"  disabled>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>

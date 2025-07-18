@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./MoneyWealth.css">
+</head>
+
+  <body>     
+  
+          <header>
+              <nav>
+                  <ul>
+                    <li><a href=""> Money-iQ <i class="fa-solid fa-brain"></i></a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href=" ">Properties</a></li>
+                      <li><a href="">Our Projects</a></li>
+                      <li><a href="#">Market</a></li>
+                  </ul>
+              </nav>
+              
+          </header>
+          <main>
+              <section class="hero">
+                  <img src="https://img.freepik.com/free-vector/many-office-buildings-city_1308-35976.jpg?t=st=1740075207~exp=1740078807~hmac=4702b66644514836983e23aa8179e353d641632c3ef4dffbc7fbf10c91fb9a73&w=1380" alt="Modern house">
+                  <div class="hero-text">
+                      <h1>Design Your Dream life  <br> / make it <span> reality </span>   </h1>                      
+                  </div>
+              </section>
+          </main>
+
+      
+          <div class="plans">       
+              
+            <div class="plan">
+                <h3>Slow Plan</h3>
+                <p>Design your dream life</p>
+                
+     
+        <form action="SubmitPlanServlet" method="post" >
+        
+        <textarea class="text-area" placeholder="explain what you want to achieve ? " name="planType"></textarea>
+        file must be the previous banking history (statements )
+        <input type="file" class="file-input"> <br><br>
+        <button type="submit"> submit </button>
+        </form>
+    </div>
+    
+    
+    
+</div>
+    <div class="explanation">
+        <p>Explain how plans are working -</p>
+                    
+
+                How the Slow Plan Works: <br>
+                 <br>
+                Step 1: Enrollment Eligibility To take advantage of this plan, users can enroll after 6 months. This period allows us to internally process user transactions and create a personalized plan based on these transactions.
+                 <br> <br>
+                Step 2: Goal Explanation For enrollment, users must provide a detailed explanation of their goals. This includes:
+                     <br> <br>
+                . Specific goals to achieve in the next 6 months or a year.
+                    <br> <br>
+                . Any specific plans they are working on.
+                    <br> <br>
+                . Details of any loans taken from other banks.
+                   <br> <br>
+                . Financial knowledge and understanding, including budgeting, investments, and saving strategies.
+                  <br> <br>
+                . We will work to improve your financial understanding and correct any mistakes.
+                 <br> <br>
+                Step 3: Process Assistance Go through our process. We will assist you by refining questions based on your submissions and records to ensure we capture all necessary details.
+                 <br> <br>
+                Step 4: Data Processing We will work on your data, which requires some time. Even with the help of AI, our team ensures accuracy before finalizing your personalized plan.
+                <br>  <br>
+                Step 5: Payment and Plan Delivery Proceed to the payment section and complete the payment. Once done, your enrollment will be completed, and you will receive your personalized plan.
+                <br>  <br>
+                Step 6: Plan Tracking After enrollment, you can track your plan's progress, monitor your habits, and receive important updates related to your financial health.                             
+            </div>
+        
+
+
+        
+<div class="plans">
+    <div class="explain1">
+        How the immediate Plan 
+        <br> <br>
+        step 1 : we will take inputs from the user as previous banking history ( Because of we are internally working or user trasitions and making plan bases on transitions)
+       <br> <br>
+       Step 2: For enrollment, users must provide a detailed explanation of their goals. This includes what they want to achieve in the next 6 months or a year, any specific plans they are working on, or any loans they have taken from other banks. Users should also share their financial knowledge with us. We will work to improve their financial understanding and correct any mistakes.
+       <br> <br>
+       Step 3: Go through our process. We will assist you by refining questions based on your submissions and records.
+       <br> <br>
+       Step 4: We will work on your data, which requires some time. Even with the help of AI, our team ensures accuracy before finalizing your personalized plan.
+       <br> <br>
+       Step 5: Proceed to the payment section and complete the payment. Once done, your enrollment will be completed, and you will receive your personalized plan.
+       <br> <br>
+       Step 6: After enrollment, you can track your plan's progress, monitor your habits, and receive important updates related
+    </div>
+    
+
+    
+    
+    <div class="plan">
+        <h3>Immediate Plan</h3>
+        <p>Design your dream life</p>
+        <form action="bank/SubmitPlan2" method="post" enctype="multipart/form-data">
+        
+        <input class="text-area" placeholder="explain what you want to achieve ? "></input>
+        file must be the previous banking history (statements )
+        <input type="file" class="file-input"> <br><br>
+        <button type="submit"> submit </button>
+        </form>
+    </div>
+</div>
+    <div class="explanation">
+        <p>Explain how plans are working -</p>
+    </div>
+</div>
+
+
+
+      <section class="properties">
+          <h2>Featured Properties</h2>
+          <div class="property">
+              <img src="property1.jpg" alt="Property 1">
+              <h3>Elite Estate Advisors</h3>
+              <p>Modern apartment in the city center.</p>
+          </div>
+          <div class="property">
+              <img src="property2.jpg" alt="Property 2">
+              <h3>Bayline Realty Group</h3>
+              <p>Luxurious home with a stunning view.</p>
+          </div>
+      </section>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.body.classList.add("content-loaded");
+            }, 1000);
+        });
+    </script>
+  </body>
+  </html>
+  
