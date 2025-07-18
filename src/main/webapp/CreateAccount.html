@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Banking Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CreateAccount.css">
+</head>
+<body>
+    <navbar id="navbar">
+        <div class="title">
+            ↗ &nbsp; <span> Money-iQ <i class="fa-solid fa-brain"></i></span>
+        </div>
+        <nav>
+            <li>Features</li>
+            <li>Bank Accounts</li>
+            <li>Register</li>
+            <li>WealthWave</li>
+            <li>Loans</li>
+        </nav>
+        <div class="signUp">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <span>Menu</span>
+        </div>
+    </navbar>
+
+    <div class="container">
+        <main> <button> <a href="">Back</a></button>   </main>
+        <div class="form-container">
+            <h2>Register</h2>
+            
+            
+            
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" pattern="[A-Za-z]+"
+                     title="Only alphabets are allowed" required >
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                    title="password must be more than 8 character use 1 special character "
+                     required>
+                </div>
+                <div class="input-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" title=" phone number must be 10 digit"required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                    </label>
+                </div>
+                <button type="submit" class="register-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
